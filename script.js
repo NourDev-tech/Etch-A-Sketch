@@ -46,7 +46,7 @@ function resetBoard() {
   squares.forEach((div) => (div.style.backgroundColor = "white"));
 }
 
-document.querySelector("body").addEventListener("click", (e) => {
+document.querySelector(".board").addEventListener("click", (e) => {
   if (e.target.tagName != "BUTTON") {
     click = !click;
     if (click) {
